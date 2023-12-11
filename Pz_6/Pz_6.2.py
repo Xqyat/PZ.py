@@ -1,5 +1,5 @@
 # Дан список размера N. Найти два соседних, сумма
-# которых максимальна, и выести эти элементы в порядке
+# которых максимальна, и вывести эти элементы в порядке
 # возрастания их индексов
 import random as rand
 N_num = rand.randint(2, 9)
@@ -12,5 +12,5 @@ max_num_1 = max(List_A)
 print(List_A)
 List_A.remove(max_num_1)
 max_num_2 = max(List_A)
-print(max_num_1, max_num_2)
+print("Максимальные числа из списка: ", max_num_1, max_num_2)
 

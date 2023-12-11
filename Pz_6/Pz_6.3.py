@@ -5,14 +5,14 @@
 #Первые К элементов полученного списка положить равными 0
 import random as rand
 N_num = rand.randint(4, 8)
-K_num = rand.randint(2, N_num-1)
-print(K_num)
+K_num = rand.randint(2, N_num)
+print("Число элементоа, на которое сдвинется список: ", K_num)
 List_A = []
 for i in range(N_num):
     list_nums = rand.randint(1, 9)
-    zero_list = [0] * N_num
     List_A.append(list_nums)
-print(List_A)
-for i in range(K_num):
+zero_list = [0] * N_num
+print("Исходный список: ", List_A)
+for i in range(N_num - K_num):
     zero_list [i + K_num] = List_A [i]
-print(zero_list)
+print("Итоговой список: ", zero_list)

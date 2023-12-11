@@ -4,8 +4,6 @@
 # не использовать.
 import random as rand
 quantity_num = int(input("Введите количество чисел, которые вы хотите добавить в список: "))
-
-
 List_A = []
 for i in range(quantity_num):
     N_num = rand.randint(1, 9)

@@ -11,5 +11,5 @@ for i in range(len(S_str)):
         result += "*" * N_num
     else:
         result += S_str[i]
-print(result)
+print("Предложение с звёздочками: ", result)
 
