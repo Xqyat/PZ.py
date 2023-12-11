@@ -5,7 +5,6 @@ import random as rand
 N_num = rand.randint(1, 3)
 result = ""
 S_str = input("Напишите непустое предложение: ")
-print(N_num)
 for i in range(len(S_str)):
     if S_str[i] == " ":
         result += "*" * N_num
