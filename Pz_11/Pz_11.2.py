@@ -25,3 +25,6 @@ for i in poem.read():
     if i == "\n":
         new_poem.write("+" * pluses)
         new_poem.write("\n")
+    elif i == "…":
+        new_poem.write("\n")
+        new_poem.write("+" * pluses)
