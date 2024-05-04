@@ -29,6 +29,7 @@ with sq.connect("Tv_workshop.db") as con:
 #     cur = con.cursor()
 #     cur.execute("""select * from tv_repair WHERE sum_price < 1000""")
 #     frs = cur.fetchall()
+
 #     cur.execute("""select * from tv_repair WHERE master = 'David Kelson'""")
 #     srs = cur.fetchall()
 #     cur.execute("""select * from tv_repair WHERE doc = 1 or doc = 4""")
@@ -40,7 +41,6 @@ with sq.connect("Tv_workshop.db") as con:
     cur = con.cursor()
     cur.execute("""select * from tv_repair""")
     [print(i, sep = "\n") for i in cur]
-
 #
 # with sq.connect("Tv_workshop.db") as con:
 #     cur = con.cursor()
